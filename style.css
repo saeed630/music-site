@@ -2,14 +2,12 @@
 body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-    background-image: url('https://chat.openai.com/cdn-cgi/image/width=1920,quality=75,format=auto/https://files.oaiusercontent.com/file-7KpoieG5dkRSn2Kbv9yWfS?se=2025-06-18T01%3A31%3A00Z&sp=r&sv=2021-08-06&sr=b&rscd=attachment%3B%20filename%3D%22anonymous.jpg%22&sig=q4...'); /* use uploaded image */
+    font-family: 'Arial', sans-serif;
+    background-image: url('background.jpg');
     background-size: cover;
     background-position: center;
-    color: white;
-    text-align: center;
-    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .container {
