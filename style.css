@@ -1,54 +1,83 @@
 
-body {
-  margin: 0;
-  font-family: "Vazirmatn", sans-serif;
-  background: linear-gradient(to bottom, #000000, #1a0000);
-  color: white;
-  text-align: center;
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Tahoma', sans-serif;
+    background: url('bg.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
 }
 
-header {
-  padding: 40px 20px;
-  background-color: rgba(255, 0, 0, 0.1);
-  border-bottom: 2px solid red;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0,0,0,0.7);
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
-h1 {
-  font-size: 2.5rem;
-  color: #ff3333;
+.logo {
+    font-size: 1.5em;
+    color: #f00;
+    font-weight: bold;
 }
 
-.player-section {
-  margin-top: 40px;
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #f00;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 10px;
 }
 
 audio {
-  width: 90%;
-  max-width: 500px;
-  margin-top: 20px;
-}
-
-.btn {
-  display: inline-block;
-  margin: 30px 15px;
-  padding: 12px 30px;
-  background-color: red;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 30px;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  background-color: #ff4d4d;
-  transform: scale(1.05);
+    margin-top: 20px;
+    width: 80%;
+    max-width: 600px;
+    background: #222;
+    border: none;
 }
 
 footer {
-  margin-top: 80px;
-  padding: 20px;
-  background: rgba(255, 0, 0, 0.05);
-  border-top: 1px solid #440000;
-  font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+    padding: 20px 0;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.socials img {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.socials img:hover {
+    transform: scale(1.2);
 }

@@ -2,31 +2,37 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dj Jaryan 🎧</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJ Jaryan</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1>🎧 Dj Jaryan</h1>
-    <p>به دنیای موزیک من خوش اومدی</p>
-  </header>
+    <nav class="navbar">
+        <div class="logo">DJ Jaryan</div>
+        <ul class="nav-links">
+            <li><a href="collection.html">کالکشن</a></li>
+        </ul>
+    </nav>
 
-  <section class="player-section">
-    <h2>آهنگ پخش کن!</h2>
-    <audio controls>
-      <source src="sample.mp3" type="audio/mpeg">
-      مرورگر شما از پخش موزیک پشتیبانی نمی‌کند.
-    </audio>
-  </section>
+    <section class="hero">
+        <div class="overlay">
+            <h1>DJ Jaryan</h1>
+            <audio controls>
+                <source src="sample.mp3" type="audio/mpeg">
+                مرورگر شما از پخش صوت پشتیبانی نمی‌کند.
+            </audio>
+        </div>
+    </section>
 
-  <section class="buttons">
-    <a href="collection.html" class="btn">🎵 کالکشن آهنگ‌ها</a>
-  </section>
-
-  <footer>
-    <p>تمامی حقوق متعلق به Dj Jaryan می‌باشد © 2025</p>
-  </footer>
+    <footer>
+        <div class="socials">
+            <a href="https://instagram.com/djjaryan" target="_blank"><img src="icons/instagram.svg" alt="Instagram"></a>
+            <a href="https://youtube.com/@djjaryan" target="_blank"><img src="icons/youtube.svg" alt="YouTube"></a>
+            <a href="https://t.me/djjaryan" target="_blank"><img src="icons/telegram.svg" alt="Telegram"></a>
+            <a href="https://tiktok.com/@djjaryan" target="_blank"><img src="icons/tiktok.svg" alt="TikTok"></a>
+        </div>
+    </footer>
 </body>
 </html>
