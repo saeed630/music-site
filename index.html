@@ -1,50 +1,51 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>DJ Jaryan</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- ناوبری شناور -->
-  <nav class="nav">
+  <header class="topbar">
     <div class="brand">DJ Jaryan</div>
-    <button class="menu-btn" aria-label="menu">☰</button>
-    <ul class="nav-links">
-      <li><a href="index.html">خانه</a></li>
-      <li><a href="collection.html">کالکشن</a></li>
-    </ul>
-  </nav>
 
-  <!-- هرو با بک‌گراند تاریک -->
-  <header class="hero">
-    <!-- اگر فایل background.jpg را آپلود کرده‌ای، همین نام را نگه دار -->
-    <div class="hero-bg"></div>
-    <div class="hero-overlay"></div>
-
-    <div class="hero-content">
-      <h1 class="dj-title">DJ Jaryan</h1>
-
-      <audio class="player" controls>
-        <source src="sample.mp3" type="audio/mpeg" />
-        مرورگر شما از پخش صوت پشتیبانی نمی‌کند.
-      </audio>
-
-      <div class="social">
-        <a href="https://tiktok.com/@djjaryan" target="_blank" aria-label="TikTok">🎵</a>
-        <a href="https://t.me/djjaryan" target="_blank" aria-label="Telegram">✈️</a>
-        <a href="https://youtube.com/@djjaryan" target="_blank" aria-label="YouTube">▶️</a>
-        <a href="https://instagram.com/djjaryan" target="_blank" aria-label="Instagram">📸</a>
-      </div>
+    <div class="controls">
+      <button id="themeToggle" class="theme-btn" aria-label="تغییر تم">🌙</button>
+      <a href="collection.html" class="nav-link">کالکشن</a>
     </div>
   </header>
 
-  <script>
-    // منوی موبایل
-    const btn = document.querySelector('.menu-btn');
-    const links = document.querySelector('.nav-links');
-    btn.addEventListener('click', () => links.classList.toggle('open'));
-  </script>
+  <main class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="glass">
+      <h1 class="dj-title">DJ Jaryan</h1>
+
+      <div class="player-wrap">
+        <audio id="player" controls preload="metadata">
+          <source src="sample.mp3" type="audio/mpeg" />
+          مرورگر شما از پخش صوت پشتیبانی نمی‌کند.
+        </audio>
+      </div>
+
+      <div class="socials">
+        <a href="https://tiktok.com/@djjaryan" target="_blank" rel="noopener" aria-label="TikTok" class="social">
+          <!-- inline SVG TikTok (simple) -->
+          <svg viewBox="0 0 24 24"><path fill="currentColor" d="M..." /></svg>
+        </a>
+        <a href="https://t.me/djjaryan" target="_blank" rel="noopener" aria-label="Telegram" class="social">
+          <svg viewBox="0 0 24 24"><path fill="currentColor" d="M..." /></svg>
+        </a>
+        <a href="https://youtube.com/@djjaryan" target="_blank" rel="noopener" aria-label="YouTube" class="social">
+          <svg viewBox="0 0 24 24"><path fill="currentColor" d="M..." /></svg>
+        </a>
+        <a href="https://instagram.com/djjaryan" target="_blank" rel="noopener" aria-label="Instagram" class="social">
+          <svg viewBox="0 0 24 24"><path fill="currentColor" d="M..." /></svg>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
