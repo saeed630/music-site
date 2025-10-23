@@ -1,24 +1,50 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DJ Jaryan</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DJ Jaryan</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <h1>DJ Jaryan</h1>
-        <button class="play-button">▶️</button>
-    </div>
+  <!-- ناوبری شناور -->
+  <nav class="nav">
+    <div class="brand">DJ Jaryan</div>
+    <button class="menu-btn" aria-label="menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">خانه</a></li>
+      <li><a href="collection.html">کالکشن</a></li>
+    </ul>
+  </nav>
 
-    <!-- Social Media Links -->
-    <div class="social-links">
-        <a href="https://www.tiktok.com/@djjaryan_official?_t=ZN-8xGxMQBXLDr&_r=1" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/3046/3046122.png" alt="TikTok"></a>
-        <a href="https://t.me/djjaryanofficial21" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram"></a>
-        <a href="https://youtube.com/@djjaryan?si=z3RYw08yccMrMIUm" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"></a>
-        <a href="https://www.instagram.com/djjaryan_official?igsh=cGNlbWczN2gzMjB1&utm_source=qr" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+  <!-- هرو با بک‌گراند تاریک -->
+  <header class="hero">
+    <!-- اگر فایل background.jpg را آپلود کرده‌ای، همین نام را نگه دار -->
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <h1 class="neon">DJ Jaryan</h1>
+
+      <audio class="player" controls>
+        <source src="sample.mp3" type="audio/mpeg" />
+        مرورگر شما از پخش صوت پشتیبانی نمی‌کند.
+      </audio>
+
+      <div class="social">
+        <a href="https://tiktok.com/@djjaryan" target="_blank" aria-label="TikTok">🎵</a>
+        <a href="https://t.me/djjaryan" target="_blank" aria-label="Telegram">✈️</a>
+        <a href="https://youtube.com/@djjaryan" target="_blank" aria-label="YouTube">▶️</a>
+        <a href="https://instagram.com/djjaryan" target="_blank" aria-label="Instagram">📸</a>
+      </div>
     </div>
+  </header>
+
+  <script>
+    // منوی موبایل
+    const btn = document.querySelector('.menu-btn');
+    const links = document.querySelector('.nav-links');
+    btn.addEventListener('click', () => links.classList.toggle('open'));
+  </script>
 </body>
 </html>
