@@ -40,11 +40,14 @@ body{
 
 /* هرو */
 .hero{ position:relative; height:100svh; display:grid; place-items:center; }
-.hero-bg{
-  position:absolute; inset:0;
-  background-image: url("background.jpg"); /* تصویر خودت را با این نام آپلود کن */
-  background-size: cover; background-position: center;
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
   filter: brightness(.35) saturate(1.1);
+}
 }
 .hero-overlay{
   position:absolute; inset:0;
