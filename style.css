@@ -123,3 +123,11 @@ body{
   }
   .nav-links.open{ opacity:1; pointer-events:auto; transform: translateY(0); }
 }
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(.35) saturate(1.1);
+}
