@@ -100,3 +100,32 @@ audio#player{
   audio#player{width:92%}
   .social{width:38px;height:38px}
 }
+/* شبکه‌های اجتماعی */
+.social{
+  margin-top: 22px;
+  display:flex; gap:14px; justify-content:center; align-items:center;
+}
+.social a{
+  width:44px; height:44px; display:grid; place-items:center;
+  border-radius:12px; text-decoration:none; font-size:1.25rem;
+  color:#fff; background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.14);
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+}
+.social a:hover{
+  transform: translateY(-3px) scale(1.05);
+  background: rgba(255,22,48,.15);
+  box-shadow: 0 8px 24px rgba(255,22,48,.25);
+}
+
+/* ریسپانسیو */
+@media (max-width: 840px){
+  .menu-btn{ display:block; }
+  .nav-links{
+    position: absolute; right:12px; top:70px;
+    flex-direction: column; gap:10px; padding:10px;
+    background: rgba(5,5,9,.9); border:1px solid rgba(255,255,255,.08);
+    border-radius:12px; opacity:0; pointer-events:none; transform: translateY(-6px);
+    transition:.2s ease;
+  }
+  .nav-links.open{ opacity:1; pointer-events:auto; transform: translateY(0); }
